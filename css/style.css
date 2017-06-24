@@ -4,3 +4,45 @@
   box-sizing: border-box;
   font-family: 'Raleway', Helvetica, sans-serif;
 }
+
+.main_width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header, section, footer {
+  width: 100%
+}
+
+header {
+  background-color: black;
+  height: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+
+header #logo {
+  float: left;
+  padding-top: 15px;
+}
+
+header span {
+  color: #5EC9B4;
+  font-weight: 700;
+}
+
+header nav {
+  float: right;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
