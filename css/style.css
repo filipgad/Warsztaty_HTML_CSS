@@ -202,6 +202,13 @@ header a {
   background-color: #FBFBFB;
   text-align: center;
   margin-top: 40px;
+  margin-right: 20px;
+  vertical-align: top;
+  position: relative;
+}
+
+#price_list .price:last-child {
+  margin-right: 0;
 }
 
 .small_circle {
@@ -211,7 +218,7 @@ header a {
   border-radius: 50%;
   border: 1px solid #CFCFCF;
   margin: -40px auto;
-  box-shadow: inset 0 0 0 15px white
+  box-shadow: inset 0 0 0 15px white;
 }
 
 .price h2 {
@@ -265,10 +272,37 @@ header a {
   text-decoration: none;
   display: block;
   width: 150px;
-  margin: 0 auto;
-  margin-top: 150px;
   background-color: turquoise;
   color: white;
   padding: 10px 0;
   border-radius: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 115px;
+}
+
+.standard {
+  background-color: turquoise;
+  border: none;
+}
+
+.standard h2 {
+  color: white;
+}
+
+.standard .circle {
+  color: turquoise;
+  border: none;
+}
+
+.standard a {
+  background-color: white;
+  color: turquoise;
+  border: none;
+}
+
+.standard .small_circle {
+  background-color: white;
+  box-shadow: inset 0 0 0 15px turquoise;
+  border: none;
 }
