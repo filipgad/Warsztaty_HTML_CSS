@@ -107,3 +107,68 @@ header a {
   padding: 10px 20px;
   border-radius: 5px;
 }
+
+/* SECTION 2 */
+
+#products {
+  height: 200px;
+}
+
+.product {
+  height: 250px;
+  width: 383px;
+  display: inline-block;
+  border: 1px solid #CFCFCF;
+  margin: 20px 20px 0 0;
+  vertical-align: top;
+}
+
+.product:last-of-type {
+  margin-right: 0;
+}
+
+.picture1 {
+  background-image: url("../images/box1_img.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.picture2 {
+  background-image: url("../images/box2_img.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#products h2 {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#products h2:after {
+  content: '';
+  display: block;
+  background-color: turquoise;
+  width: 180px;
+  height: 5px;
+}
+
+.picture1 h2, .picture2 h2 {
+  padding: 10px;
+  margin: 180px 0;
+}
+
+.text {
+  height: 280px;
+}
+
+.text h2 {
+  padding: 20px 0 0 15px;
+}
+
+.text p {
+  padding: 15px;
+  line-height: 25px;
+}
