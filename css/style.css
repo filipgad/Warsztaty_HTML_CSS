@@ -317,3 +317,50 @@ header a {
   background-color: white;
   color: #AAAAAA;
 }
+
+/* SECTION 4 contact */
+
+#contact {
+  height: 600px;
+}
+
+#contact .main_width > h2 {
+  font-weight: 400;
+  color: #7C7C7C;
+  padding: 30px 0;
+}
+
+#contact .main_width > h2:after {
+  content: '';
+  display: block;
+  background-color: turquoise;
+  width: 383px;
+  height: 5px;
+}
+
+input {
+  height: 50px;
+  width: 600px;
+  border: 1px solid turquoise;
+  display: block;
+  margin: 30px 0;
+  font-size: 25px;
+  padding: 10px;
+}
+
+textarea {
+  width: 600px;
+  height: 150px;
+  border: 1px solid turquoise;
+  resize: none;
+  font-size: 25px;
+  padding: 10px;
+}
+
+input:focus, textarea:focus {
+  outline: 3px solid turquoise;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #D7D7D7;
+}
