@@ -256,16 +256,17 @@ header a {
 .price ul li {
   font-size: 23px;
   display: block;
-  color: #6D6D6D;
   padding: 8px;
 }
 
 .price ul li:nth-child(2n) {
-  background-color: #DADADA;
+  background-color: #E9E9E9;
+  color: #8F8F8F;
 }
 
 .price ul li:nth-child(2n+1) {
-  background-color: #B8B8B8;
+  background-color: #DADADA;
+  color: #AAAAAA;
 }
 
 .price a {
@@ -305,4 +306,14 @@ header a {
   background-color: white;
   box-shadow: inset 0 0 0 15px turquoise;
   border: none;
+}
+
+.standard ul li:nth-child(2n) {
+  background-color: #E9E9E9;
+  color: #AAAAAA;
+}
+
+.standard ul li:nth-child(2n+1) {
+  background-color: white;
+  color: #AAAAAA;
 }
