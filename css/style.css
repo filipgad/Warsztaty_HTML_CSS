@@ -338,9 +338,18 @@ header a {
   height: 5px;
 }
 
-input {
+.left_form, .right_form {
+  display: inline-block;
+}
+
+.right_form {
+  margin-left: 80px;
+  vertical-align: top;
+}
+
+.left_form input {
   height: 50px;
-  width: 600px;
+  width: 700px;
   border: 1px solid turquoise;
   display: block;
   margin: 30px 0;
@@ -348,8 +357,8 @@ input {
   padding: 10px;
 }
 
-textarea {
-  width: 600px;
+.left_form textarea {
+  width: 700px;
   height: 150px;
   border: 1px solid turquoise;
   resize: none;
@@ -363,4 +372,68 @@ input:focus, textarea:focus {
 
 input::placeholder, textarea::placeholder {
   color: #D7D7D7;
+}
+
+.armchair {
+  height: 180px;
+  width: 300px;
+  background-image: url("../images/red_chair.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 8px auto;
+}
+
+label {
+  color: #D7D7D7;
+  display: inline-block;
+  margin: 25px;
+  width: 300px;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+input[type="checkbox"] + label:before {
+  content: '';
+  background-color: white;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid turquoise;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: '';
+  background-image: url("../images/form_ok.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border: 1px solid turquoise;
+  display: inline-block;
+}
+
+input[type="submit"]:before {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+input[type="submit"] {
+  background-color: turquoise;
+  color: white;
+  border-radius: 7px;
+  width: 300px;
+  border: 1px solid turquoise;
+  display: block;
+  font-size: 25px;
+  padding: 10px;
+  margin: 0 auto;
 }
