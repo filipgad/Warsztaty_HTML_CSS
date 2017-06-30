@@ -38,14 +38,47 @@ header nav {
   letter-spacing: 1px;
 }
 
-header ul li {
-  display: inline-block;
+header ol {
   padding: 15px 20px;
+  list-style-type: none;
 }
 
-header a {
+header ol > li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header ol > li > ul {
+  list-style-type:none;
+  display: none;
+  margin-left: -30px;
+}
+
+header ol > li > ul > li {
+  display: block;
+  background-color: black;
+  padding: 10px 15px;
+  font-weight: 400;
+}
+
+
+header ol a {
   text-decoration: none;
   color: white;
+  display: block;
+}
+
+header ol > li > a:hover {
+  color: #AAAAAA;
+}
+
+header ol > li > ul > li > a:hover {
+  color: turquoise;
+}
+
+header ol > li:hover > ul {
+  display: block;
+  position: absolute;
 }
 
 /* SECTION 1 slider*/
@@ -321,7 +354,7 @@ header a {
 /* SECTION 4 contact */
 
 #contact {
-  height: 600px;
+  height: 500px;
 }
 
 #contact .main_width > h2 {
@@ -381,7 +414,7 @@ input::placeholder, textarea::placeholder {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 8px auto;
+  margin: 8px 0;
 }
 
 label {
@@ -406,18 +439,16 @@ input[type="checkbox"] + label:before {
   border: 1px solid turquoise;
 }
 
+input[type="checkbox"]:hover + label:before {
+  cursor: pointer;
+}
+
 input[type="checkbox"]:checked + label:before {
   content: '';
   background-image: url("../images/form_ok.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  display: block;
-  float: left;
-  width: 40px;
-  height: 40px;
-  border: 1px solid turquoise;
-  display: inline-block;
 }
 
 input[type="submit"]:before {
@@ -436,4 +467,29 @@ input[type="submit"] {
   font-size: 25px;
   padding: 10px;
   margin: 0 auto;
+}
+
+/* STOPKA */
+
+footer {
+  height: 80px;
+  color: #AAAAAA;
+}
+
+.rights {
+  display: inline-block;
+  padding-right: 400px;
+  vertical-align: middle;
+}
+
+.social {
+  display: inline-block;
+  padding-right: 60px;
+  vertical-align: middle;
+}
+
+.logo2 {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
 }
