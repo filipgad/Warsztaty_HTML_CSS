@@ -10,6 +10,12 @@
   margin: 0 auto;
 }
 
+.main_width:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 header, section, footer {
   width: 100%
 }
