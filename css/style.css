@@ -5,7 +5,7 @@
   font-family: 'Raleway', Helvetica, sans-serif;
 }
 
-.main_width {
+.main_width { /* kontener wysrodkowujacy */
   width: 1200px;
   margin: 0 auto;
 }
@@ -22,7 +22,7 @@ header {
   text-transform: uppercase;
 }
 
-header #logo {
+header #logo { /* logo */
   float: left;
   padding-top: 15px;
 }
@@ -32,6 +32,7 @@ header span {
   font-weight: 700;
 }
 
+/* nawigacja z rozwijanym menu */
 header nav {
   float: right;
   font-weight: 700;
@@ -39,8 +40,13 @@ header nav {
 }
 
 header ol {
-  padding: 15px 20px;
+  padding: 15px 0;
   list-style-type: none;
+}
+
+header ol a {
+  text-decoration: none;
+  color: white;
 }
 
 header ol > li {
@@ -72,12 +78,6 @@ header ol > li > ul:before {
 	margin: 20px auto 0;
 }
 
-header ol a {
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-
 header ol > li > a:hover {
   color: #AAAAAA;
 }
@@ -98,7 +98,7 @@ header ol > li:hover > ul {
   height: 400px;
 }
 
-#slider .main_width > a {
+#slider .main_width > a { /* strzałki prawo/lewo */
   text-decoration: none;
   display: inline-block;
   padding-top: 150px;
@@ -108,7 +108,7 @@ header ol > li:hover > ul {
   vertical-align: top;
 }
 
-.box_left {
+.box_left { /* box z fotelem */
   width: 550px;
   height: 400px;
   display: inline-block;
@@ -142,7 +142,7 @@ header ol > li:hover > ul {
   padding: 15px 0 45px 0;
 }
 
-.box_right a {
+.box_right a { /* przycisk "Zobacz więcej" */
   text-decoration: none;
   text-align: center;
   background-color: turquoise;
@@ -237,7 +237,7 @@ header ol > li:hover > ul {
   height: 5px;
 }
 
-.price {
+.price { /* cenówka */
   display: inline-block;
   width: 383px;
   height: 600px;
@@ -254,7 +254,7 @@ header ol > li:hover > ul {
   margin-right: 0;
 }
 
-.small_circle {
+.small_circle { /* ozdobne kółko */
   background-color: #CFCFCF;
   width: 60px;
   height: 60px;
@@ -270,7 +270,7 @@ header ol > li:hover > ul {
   padding: 50px 0;
 }
 
-.circle {
+.circle { /* kółko z ceną */
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -312,7 +312,7 @@ header ol > li:hover > ul {
   color: #AAAAAA;
 }
 
-.price a {
+.price a { /* przycisk "Dołącz" */
   text-decoration: none;
   display: block;
   width: 150px;
@@ -325,7 +325,7 @@ header ol > li:hover > ul {
   left: 115px;
 }
 
-.standard {
+.standard { /* cenówka "Standard" - środkowa */
   background-color: turquoise;
   border: none;
 }
@@ -417,7 +417,7 @@ input::placeholder, textarea::placeholder {
   color: #D7D7D7;
 }
 
-.armchair {
+.armchair { /* obrazek - fotel */
   height: 180px;
   width: 300px;
   background-image: url("../images/red_chair.png");
@@ -438,7 +438,7 @@ input[type=checkbox] {
 	visibility: hidden;
 }
 
-input[type="checkbox"] + label:before {
+input[type="checkbox"] + label:before { /* kwadracik checkbox'a */
   content: '';
   background-color: white;
   display: block;
@@ -453,7 +453,7 @@ input[type="checkbox"]:hover + label:before {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label:before {
+input[type="checkbox"]:checked + label:before { /* zaznaczony checkbox */
   content: '';
   background-image: url("../images/form_ok.jpg");
   background-size: contain;
@@ -471,12 +471,14 @@ input[type="submit"] {
   background-color: turquoise;
   color: white;
   border-radius: 7px;
+  border: none;
+  outline: none;
   width: 300px;
-  border: 1px solid turquoise;
   display: block;
   font-size: 25px;
   padding: 10px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 /* STOPKA */
